@@ -8,7 +8,7 @@ import EmailConfirmationPage from './registration/email-confirmation-page';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
-import {LinkContainer} from 'react-router-bootstrap'
+import { LinkContainer } from 'react-router-bootstrap'
 
 export default function App() {
   return (
