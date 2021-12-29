@@ -10,6 +10,8 @@ import "bootstrap/dist/css/bootstrap.css";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
+import { SCREEN_SIGNIN, SCREEN_SIGNUP } from "./registration/registration-page";
+
 export default function App() {
   return (
     <>
@@ -30,7 +32,6 @@ export default function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/sign-in" element={<RegistrationPage />} />
-          <Route exact path="/sign-up" element={<RegistrationPage />} />
           <Route
             exact
             path="/confirm-email"
