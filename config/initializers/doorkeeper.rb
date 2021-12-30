@@ -18,7 +18,8 @@ Doorkeeper.configure do
   # adding oauth authorized applications. In other case it will return 403 Forbidden response
   # every time somebody will try to access the admin web interface.
   #
-  # admin_authenticator do
+  admin_authenticator do
+    redirect_to new_admin_user_session_url unless current_admin_user
   #   # Put your admin authentication logic here.
   #   # Example implementation:
   #
@@ -27,7 +28,7 @@ Doorkeeper.configure do
   #   else
   #     redirect_to sign_in_url
   #   end
-  # end
+  end
 
   # You can use your own model classes if you need to extend (or even override) default
   # Doorkeeper models such as `Application`, `AccessToken` and `AccessGrant.
